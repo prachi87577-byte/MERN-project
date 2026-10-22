@@ -1,0 +1,3 @@
+import { Link } from "react-router-dom";
+export function Unauthorized() { return <section className="empty-state page-empty"><span className="eyebrow">ACCESS RESTRICTED</span><h1>You don’t have access to this page.</h1><p>Your account role does not have permission to view this destination.</p><Link className="button" to="/">Return home</Link></section>; }
+export default function NotFound() { return <section className="empty-state page-empty"><span className="eyebrow">404 · PAGE NOT FOUND</span><h1>This page wandered off.</h1><p>The page may have moved or the link may be out of date.</p><Link className="button" to="/">Back to home</Link></section>; }
